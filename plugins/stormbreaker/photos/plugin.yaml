@@ -1,0 +1,6 @@
+plugin:
+    name: 'stormbreaker.photos::lang.plugin.name'
+    description: 'stormbreaker.photos::lang.plugin.description'
+    author: Stormbreaker
+    icon: oc-icon-database
+    homepage: ''

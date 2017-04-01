@@ -1,0 +1,42 @@
+title = "album"
+url = "/album/pictures/:slug"
+layout = "default"
+is_hidden = 0
+
+[mailSignup Newsletter]
+list = "0ce7d07095"
+
+[gallerySlug]
+slug = "{{ :slug }}"
+lang = "Gallery"
+jqueryinject = "no"
+thumbnail = "true"
+caption = "true"
+desc = "true"
+counter = "true"
+controls = "true"
+preload = 1
+mode = "slide"
+speed = 500
+loop = "true"
+auto = "false"
+pause = 2000
+escKey = "true"
+height = 70
+width = 100
+resizer = "auto"
+==
+<?php
+function onEnd()
+{
+    $this->page->title = $this['post']-> title;    
+}
+?>
+==
+<div class="container">
+    <div class ="row">
+        <div class = "col-sm-8">
+            {% component 'gallerySlug' %}
+        </div>
+    </div>
+</div>

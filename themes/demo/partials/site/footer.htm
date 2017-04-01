@@ -1,0 +1,23 @@
+[mailSignup Newsletter]
+list = "0ce7d07095"
+==
+<div id="footer">
+    <div class="container">
+        <hr />
+            {% component 'Newsletter' %}
+                <div class ="text-center">
+                    <p class="muted credit">&copy; {{ "now"|date("Y") }} Texas Rocket League</p>
+                    <p>
+                    <a href="{{ 'home'|page }}">Home</a> /
+                    <a href="{{ 'about'|page }}">About</a> /
+                    <a href="{{ 'contact'|page }}">Contact</a> /
+                    </p>
+                </div>
+    <!--Social Media Links -->
+    <div class="text-center">
+	    <a href="https://twitter.com/TexasRL" target="_blank" rel="nofollow"><i class="fa fa-twitter" style="font-size:36px;color:#1f3f50"></i></a>
+	    <a href="https://www.reddit.com/r/RocketLeague/" target="_blank" rel="nofollow"><i class="fa fa-reddit" style="font-size:36px;color:#1f3f50"></i></a>
+	    <a href="https://www.twitch.tv/texasrl" target="_blank"><i class="fa fa-twitch" style="font-size:36px;color:#1f3f50"></i></a>
+    </div>
+    <br>
+</div>
