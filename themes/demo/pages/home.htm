@@ -8,12 +8,23 @@ is_hidden = 0
 pageNumber = "{{ :page }}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
-sortOrder = "published_at desc"
+sortOrder = "updated_at desc"
 categoryPage = 404
 postPage = "blog/post"
 
 [mailSignup Newsletter]
 list = "0ce7d07095"
+
+[embedTimeline]
+widget-id = 855263751058096128
+tweet-limit = 5
+aria-polite = "polite"
+chrome = "nofooter transparent"
+width = 520
+height = 600
+theme = "light"
+dnt = 0
+lang = "en"
 ==
 <div class="container">
     <div class="page-header">
@@ -23,5 +34,11 @@ list = "0ce7d07095"
         <div class = "col-sm-8">
             <p>{% component 'blogPosts' %}</p>
         </div>
+    <div class ="col-sm-4">
+        <div class="pull-right">
+            {% component 'embedTimeline' %}
+        </div>
     </div>
+    </div>
+    
 </div>

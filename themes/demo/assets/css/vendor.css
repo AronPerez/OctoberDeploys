@@ -761,6 +761,7 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+  
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -6010,6 +6011,10 @@ a [class*=" icon-"] {
 .pull-right {
   float: right;
 }
+.pull-far-right{
+  float: right;
+  margin-right: auto;
+}
 .pull-left {
   float: left;
 }
@@ -6114,6 +6119,13 @@ a [class*=" icon-"] {
 .nav-list [class*=" icon-"] {
   line-height: inherit;
 }
+/*Background test*/
+.background-edit {
+    width: 100%;
+    max-width: 100%;
+    background-attachment: fixed;    
+}
+
 /* EXTRAS
  * -------------------------- */
 /* Stacked and layered icon */
